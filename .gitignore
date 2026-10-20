@@ -1,0 +1,9 @@
+node_modules/
+dist/
+data/feedback.jsonl
+data/
+*.tsbuildinfo
+.DS_Store
+.env
+.env.*
+!.env.example

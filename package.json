@@ -1,0 +1,32 @@
+{
+  "name": "richang-youlaichu",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server/index.mjs --dev",
+    "build": "tsc -b && vite build",
+    "build:pages": "tsc -b && vite build --mode pages && node scripts/pages-routes.mjs",
+    "preview:pages": "vite preview --host 127.0.0.1 --port 4173",
+    "start": "node server/index.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "tsc -b"
+  },
+  "dependencies": {
+    "@fontsource-variable/noto-serif-sc": "^5.3.1",
+    "express": "^5.3.0",
+    "lucide-react": "^1.60.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "sharp": "^0.35.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4"
+  }
+}
